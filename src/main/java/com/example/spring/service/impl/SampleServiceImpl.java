@@ -14,9 +14,8 @@ import com.example.spring.service.SampleService;
  * 
  */
 public class SampleServiceImpl implements SampleService {
-	private static final Logger LOGGER = LoggerFactory
-			.getLogger(SampleServiceImpl.class);
-	
+	private static final Logger LOGGER = LoggerFactory.getLogger(SampleServiceImpl.class);
+
 	public SampleServiceImpl() {
 		privateTest("");
 	}
@@ -55,7 +54,7 @@ public class SampleServiceImpl implements SampleService {
 		newOrder.setDescription("This is the new XYZ order");
 		return newOrder;
 	}
-	
+
 	private void privateTest(String name) {
 		LOGGER.debug(name);
 	}
